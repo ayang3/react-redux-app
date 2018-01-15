@@ -6,3 +6,47 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 > cd react-redux-app
 > npm install
 > npm start
+
+<executing on ubuntu 16.04 from scratch>
+$ sudo apt-get update
+$ sudo apt-get install nodejs
+$ sudo apt-get install npm
+$ npm install
+$ npm start			# if hit the ERR below need to install nodejs-legacy
+
+----------------------------------------------------------------------------
+> redux-simple-starter@1.0.0 start /home/racoon/git_abc/react-redux-app
+> node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js
+
+sh: 1: node: not found
+
+npm ERR! Linux 4.4.0-109-generic
+npm ERR! argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
+npm ERR! node v4.2.6
+npm ERR! npm  v3.5.2
+npm ERR! file sh
+npm ERR! code ELIFECYCLE
+npm ERR! errno ENOENT
+npm ERR! syscall spawn
+npm ERR! redux-simple-starter@1.0.0 start: `node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js`
+npm ERR! spawn ENOENT
+npm ERR! 
+npm ERR! Failed at the redux-simple-starter@1.0.0 start script 'node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the redux-simple-starter package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs redux-simple-starter
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls redux-simple-starter
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/racoon/git_abc/react-redux-app/npm-debug.log
+----------------------------------------------------------------------------
+
+$ sudo apt install nodejs-legacy
+$ npm start		# then open browser > type localhost:8080 in url area
+
