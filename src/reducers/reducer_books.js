@@ -3,9 +3,9 @@
 // 2. Wire up the reducer created in this file into the application in index.js.
 export default function() {
     return [
-        { title: 'Javascript: The Good Parts' },
-        { title: 'Harry Potter' },
-        { title: 'The Dark Tower' },
-        { title: 'Eloquent Ruby' }
+        { title: 'Javascript: The Good Parts', pages: 101 },
+        { title: 'Harry Potter', pages: 39 },
+        { title: 'The Dark Tower', pages: 85 },
+        { title: 'Eloquent Ruby', pages: 1}
     ]
 }
